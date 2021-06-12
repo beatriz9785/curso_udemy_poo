@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+// o plano de celular cobre até 100 minutos por 50 reais. o que passar de 100 minutos vai ser cobrado 2 reais por minuto extra.
+
+public class Main {
+    
+    public static void main(String[] args){
+        
+        
+        Scanner sc = new Scanner(System.in);
+        
+       int minutos = sc.nextInt();
+       double conta = 50.0;
+       
+       if(minutos > 100){
+           conta = conta + (minutos - 100)*2; //para ver o quanto passou de 100
+           
+       }
+        System.out.println("O valor a pagar é: "+conta);
+        
+    }
+    
+}
