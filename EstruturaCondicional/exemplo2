@@ -14,7 +14,7 @@ public class Main {
        double conta = 50.0;
        
        if(minutos > 100){
-           conta = conta + (minutos - 100)*2; //para ver o quanto passou de 100
+           conta += (minutos - 100)*2; //para ver o quanto passou de 100
            
        }
         System.out.println("O valor a pagar é: "+conta);
